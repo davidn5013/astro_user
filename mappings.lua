@@ -25,4 +25,24 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+  n = {
+    -- second key is the lefthand side of the map
+    -- mappings seen under group name "Buffer"
+    ["bö"] = { "<cmd>bp<cr>", desc = "Prev buffer" },
+    ["bä"] = { "<cmd>bn<cr>", desc = "Next buffer" },
+    ["ö"] = { "{", desc = "Prev empty line" },
+    ["ä"] = { "}", desc = "Next empty line" },
+    -- tables with the `name` key will be registered with which-key if it's installed
+    -- quick save
+    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+  },
+  v = {
+    -- second key is the lefthand side of the map
+    -- mappings seen under group name "Buffer"
+    ["ö"] = { "{", desc = "Prev empty line" },
+    ["ä"] = { "}", desc = "Next empty line" },
+    -- tables with the `name` key will be registered with which-key if it's installed
+    -- quick save
+    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+  },
 }
