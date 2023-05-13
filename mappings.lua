@@ -32,6 +32,7 @@ return {
     ["bä"] = { "<cmd>bn<cr>", desc = "Next buffer" },
     ["ö"] = { "{", desc = "Prev empty line" },
     ["ä"] = { "}", desc = "Next empty line" },
+    ["å"] = { "$", desc = "End of line" },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
@@ -41,6 +42,7 @@ return {
     -- mappings seen under group name "Buffer"
     ["ö"] = { "{", desc = "Prev empty line" },
     ["ä"] = { "}", desc = "Next empty line" },
+    ["å"] = { "$", desc = "End of line" },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
