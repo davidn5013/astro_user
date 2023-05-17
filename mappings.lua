@@ -30,21 +30,41 @@ return {
     -- mappings seen under group name "Buffer"
     ["bö"] = { "<cmd>bp<cr>", desc = "Prev buffer" },
     ["bä"] = { "<cmd>bn<cr>", desc = "Next buffer" },
-    ["ö"] = { "{", desc = "Prev empty line" },
-    ["ä"] = { "}", desc = "Next empty line" },
+    
+    ["ö"] = { "{", desc = "Prev paragraf" },
+    ["ä"] = { "}", desc = "Next paragraf" },
+
     ["å"] = { "$", desc = "End of line" },
+
+    ["<leader>d"] = { "<cmd>e $userprofile\\appdata\\local\\nvim\\lua\\user\\mappings.lua<cr>"},
+    ["gj"] = {"<cmd>GoAlt<cr>"},
+    ["gi"] = {"<cmd>GoImport<cr>"},
     -- tables with the `name` key will be registered with which-key if it's installed
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
   },
   v = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
-    ["ö"] = { "{", desc = "Prev empty line" },
-    ["ä"] = { "}", desc = "Next empty line" },
+    ["ö"] = { "{", desc = "Prev paragraf" },
+    ["ä"] = { "}", desc = "Next paragraf" },
     ["å"] = { "$", desc = "End of line" },
+    ["if"] = { "<esc>?func <cr>v<cmd>/^}<cr>"},
     -- tables with the `name` key will be registered with which-key if it's installed
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+  },
+  o = {
+    ["ö"] = { "{", desc = "Prev paragraf" },
+    ["ä"] = { "}", desc = "Next paragraf" },
+    ["å"] = { "$", desc = "End of line" },
+    ["if"] = { "<esc>?func <cr>v<cmd>/^}<cr>"},
+  },
+  x = {
+    ["ö"] = { "{", desc = "Prev paragraf" },
+    ["ä"] = { "}", desc = "Next paragraf" },
+    ["å"] = { "$", desc = "End of line" },
+    ["if"] = { "<esc>?func <cr>v<cmd>/^}<cr>"},
   },
 }
