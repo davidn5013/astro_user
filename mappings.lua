@@ -39,6 +39,8 @@ return {
     ["<leader>d"] = { "<cmd>e $userprofile\\appdata\\local\\nvim\\lua\\user\\mappings.lua<cr>"},
     ["gj"] = {"<cmd>GoAlt<cr>"},
     ["gi"] = {"<cmd>GoImport<cr>"},
+    
+    ["cp"] = {'<esc>:let @* = expand("%:p:h")<cr>:echo "Path copied to clipboard"<cr>'},
     -- tables with the `name` key will be registered with which-key if it's installed
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
@@ -56,15 +58,15 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
   o = {
-    ["ö"] = { "{", desc = "Prev paragraf" },
-    ["ä"] = { "}", desc = "Next paragraf" },
-    ["å"] = { "$", desc = "End of line" },
-    ["if"] = { "<esc>?func <cr>v<cmd>/^}<cr>"},
+    ["aö"] = { "a{", desc = "Prev paragraf" },
+    ["aä"] = { "a}", desc = "Next paragraf" },
+    ["af"] = { "<esc>?func <cr>v<cmd>/^}<cr>"},
+    ["if"] = { "<esc>?func <cr>f{v%<cr>"},
   },
   x = {
-    ["ö"] = { "{", desc = "Prev paragraf" },
-    ["ä"] = { "}", desc = "Next paragraf" },
-    ["å"] = { "$", desc = "End of line" },
-    ["if"] = { "<esc>?func <cr>v<cmd>/^}<cr>"},
+    ["aö"] = { "a{", desc = "Prev paragraf" },
+    ["aä"] = { "a}", desc = "Next paragraf" },
+    ["af"] = { "<esc>?func <cr>v<cmd>/^}<cr>"},
+    ["if"] = { "<esc>?func <cr>f{v%<cr>"},
   },
 }
