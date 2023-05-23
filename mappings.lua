@@ -36,7 +36,8 @@ return {
 
     ["å"] = { "$", desc = "End of line" },
 
-    ["<leader>d"] = { "<cmd>e $userprofile\\appdata\\local\\nvim\\lua\\user\\mappings.lua<cr>"},
+    ["<leader>d"] = { "<cmd>e $userprofile\\appdata\\local\\nvim\\lua\\user\\mappings.lua<cr>", 
+                      desc = "Open Usermappings"},
     ["gj"] = {"<cmd>GoAlt<cr>"},
     ["gi"] = {"<cmd>GoImport<cr>"},
     
