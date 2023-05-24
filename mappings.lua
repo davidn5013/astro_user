@@ -20,13 +20,10 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>8"] = { "<cmd>e $clipb\\nottoself.txt<cr>", desc = "Open Not To Self"},
+    ["<leader>9"] = { "<cmd>e $clipb\\clipboard.txt<cr>", desc = "Open Clipboard file"},
   },
-  t = {
-    -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
-  },
-  n = {
-    -- second key is the lefthand side of the map
+  t = {    -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
     ["bö"] = { "<cmd>bp<cr>", desc = "Prev buffer" },
     ["bä"] = { "<cmd>bn<cr>", desc = "Next buffer" },
@@ -45,7 +42,6 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-
   },
   v = {
     -- second key is the lefthand side of the map
