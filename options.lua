@@ -1,3 +1,9 @@
+-- Example of running goimport but I do not know her to put it
+  -- a.nvim_create_autocmd( { "BufWritePre" }, {
+  --   pattern = { "*.go" },
+  --   command = [[ !goimport %],
+  -- })
+  --
 -- set vim options here (vim.<first_key>.<second_key> = value)
 return {
   opt = {
