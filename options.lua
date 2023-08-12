@@ -8,11 +8,18 @@
 return {
   opt = {
     -- set to true or false etc.
-    relativenumber = true, -- sets vim.opt.relativenumber
-    number = true, -- sets vim.opt.number
+    relativenumber = false, -- sets vim.opt.relativenumber
+    number = false, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+
+    scrolloff = 2, -- Number of lines to keep above and below the cursor
+    shiftwidth = 8, -- Number of space inserted for indentation
+    tabstop = 8, -- Number of space in a tab
+    fileformat = unix,			 -- default is windows format
+    fileformats = "unix,dos", --	onlu dos as a test
+
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
