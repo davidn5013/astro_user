@@ -27,7 +27,7 @@ return {
     ["Ä"]        = { "]", desc = "Next paragraf" },
     ["å"]        = { "$", desc = "End of line" },
 
-    ["cp"]        = { '<esc>:let @* = expand("%:p:h")<cr>:echo "Path copied to clipboard"<cr>' , desc = "Store path"},
+    ["cp"]        = { [[<esc>:silent let @* = 'cd "' . expand("%:p:h") . '"' <cr>]] , desc = "Store path"},
 
     ["<leader>d"] = { "<cmd>e $userprofile\\appdata\\local\\nvim\\lua\\user\\mappings.lua<cr>", desc = "Open Usermappings" },
     ["<leader>8"] = { "<cmd>e $clipb\\nottoself.txt<cr>", desc = "Open Not To Self" },
@@ -36,8 +36,7 @@ return {
     ["<leader>k"] = { "<cmd>bn<cr>", desc = "Next buffer" },
     ["<leader>h"] = { "<cmd>vsp<cr>", desc = "Split veritcal buffer" },
 
-    -- ["p"]   = { "<cmd>YankyPutAfter<cr>", desc= "Yanky Put After" },
-    -- ["P"]   = { "<cmd>YankyPutBefore<cr>", desc= "Yanky Put Before" },
+    ["<C-p>"] = {"\"0p", desc = "Paste last yank" },
     -- ["gp"]  = { "<cmd>YankyGPutAfter<cr>", desc= "Yanky GPut After" },
     -- ["gP"]  = { "<cmd>YankyGPutBefore<cr>", desc= "Yanky GPut Before" },
     -- ["<c-n>"] = { "<cmd>YankyCycleForward<cr>", desc= "Yanky Cycle Forward" },
@@ -72,6 +71,7 @@ return {
     ["Ä"] = { "]", desc = "Next paragraf" },
     ["å"] = { "$", desc = "End of line" },
     ["if"] = { "<esc>?func <cr>v<cmd>/^}<cr>" },
+    ["<C-p>"] = {"\"0p", desc = "Paste last yank" },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
