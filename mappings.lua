@@ -52,6 +52,7 @@ return {
     ["<leader>ar"] = { "<cmd>GoRename<cr>", desc = "Go Rename"},
 
     ["<leader>aq"] = {"<cmd>Comment.nvim<cr>",desc = "Comment"},
+
   },
 
   t = {
