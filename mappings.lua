@@ -21,10 +21,10 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
 
-    ["ö"]        = { "{", desc = "Prev paragraf" },
-    ["Ö"]        = { "[", desc = "Prev paragraf" },
-    ["ä"]        = { "}", desc = "Next paragraf" },
-    ["Ä"]        = { "]", desc = "Next paragraf" },
+    ["ö"]        = { "[", desc = "Prev paragraf" },
+    ["ä"]        = { "]", desc = "Next paragraf" },
+    ["Ö"]        = { "{", desc = "Prev paragraf" },
+    ["Ä"]        = { "}", desc = "Next paragraf" },
     ["å"]        = { "$", desc = "End of line" },
 
     ["cp"]        = { [[<esc>:silent let @* = 'cd "' . expand("%:p:h") . '"' <cr>]] , desc = "Store path"},
@@ -50,7 +50,6 @@ return {
     ["<leader>at"] = { "<cmd>GoTest<cr>", desc = "Go Test"},
     ["<leader>ac"] = { "<cmd>close<cr>", desc = "Close panel"},
     ["<leader>ar"] = { "<cmd>GoRename<cr>", desc = "Go Rename"},
-
     ["<leader>aq"] = {"<cmd>Comment.nvim<cr>",desc = "Comment"},
 
   },
@@ -66,11 +65,11 @@ return {
   v = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
-    ["ö"] = { "{", desc = "Prev paragraf" },
-    ["Ö"] = { "]", desc = "Prev paragraf" },
-    ["ä"] = { "}", desc = "Next paragraf" },
-    ["Ä"] = { "]", desc = "Next paragraf" },
-    ["å"] = { "$", desc = "End of line" },
+    ["ö"]        = { "[", desc = "Prev paragraf" },
+    ["ä"]        = { "]", desc = "Next paragraf" },
+    ["Ö"]        = { "{", desc = "Prev paragraf" },
+    ["Ä"]        = { "}", desc = "Next paragraf" },
+    ["å"]        = { "$", desc = "End of line" },
     ["if"] = { "<esc>?func <cr>v<cmd>/^}<cr>" },
     ["<C-p>"] = {"\"0p", desc = "Paste last yank" },
     -- tables with the `name` key will be registered with which-key if it's installed
@@ -79,6 +78,11 @@ return {
   },
 
   o = {
+    ["ö"]        = { "[", desc = "Prev paragraf" },
+    ["ä"]        = { "]", desc = "Next paragraf" },
+    ["Ö"]        = { "{", desc = "Prev paragraf" },
+    ["Ä"]        = { "}", desc = "Next paragraf" },
+    ["å"]        = { "$", desc = "End of line" },
     ["aö"] = { "a[", desc = "Prev paragraf" },
     ["aä"] = { "a]", desc = "Next paragraf" },
     ["af"] = { "<esc>?func <cr>v<cmd>/^}<cr>" },

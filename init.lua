@@ -101,6 +101,9 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+
+  -- Set colorscheme to use
+
   end,
 }
 
